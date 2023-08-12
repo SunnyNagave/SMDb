@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>SMDb</title>
+		<link rel="stylesheet" href="index.css">
+		<!-- Font Awesome  -->
+	    <script  src="https://kit.fontawesome.com/b3348ae33f.js"crossorigin="anonymous"></script>
+		<!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+	</head>
+ 	<body>
+		<header>
+			<div class="homelogo"><a href="index.html" class="anchorstyle">Sunny's Movie Database</a></div>
+			<div class="navigators">
+				<div class="home"><a href="index.html" class="anchorstyle">Home</a></div>
+				<div class="favorites"><a href="assets/favorite.html" class="anchorstyle">Favorites</a></div>
+			</div>
+		</header>
+		<main>
+			<div class="pageheading">Search for Movies</div>
+			<div class="searchbody">
+				<form class="searchform">
+					<input type="text" placeholder="Search Here..." class="searchinput" onkeypress="return event.keyCode != 13">
+					<!-- <button class="searchbutton">Search</button> -->
+					<div class="searchresult"><i class="fa-solid fa-spinner fa-spin"></i> Searching ...
+						<!-- <div class="contentlistitem" id="t1" >
+								<span class="contentposter"><img src="sample.jpg"></span>
+								<span class="contentdetail">
+									<span class="contenttitle" >Title</span>
+									<span class="releaseyear">0000</span>
+									<span class="type">movie</span>
+								</span>
+								<span class="favbtn"> <i class="fa-regular fa-heart"></i> </span>
+						</div> -->
+					</div>
+					</div>
+				</form>
+			</div>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>

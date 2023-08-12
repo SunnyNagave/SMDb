@@ -1,0 +1,159 @@
+body{
+	background-image:linear-gradient(0deg,black,#281966);
+	color:white;
+}
+	
+header{
+	font-family : fantasy;
+	display : flex;
+	justify-content : space-between;
+	background-color: #281966;
+	height : 10vh;
+	align-items : center;
+	padding-left: 10px;
+	border: 4px groove white;
+	border-radius : 5vh;
+}
+	
+.cursorpointer{
+	cursor : pointer;
+}
+	
+.navigators{
+	display : flex;
+	justify-content : space-around;
+	width:15vw;
+}
+
+.anchorstyle{
+	text-decoration:none;
+	color:white;
+}
+	
+main{
+	text-align : center;
+	height : auto;
+	padding-top : 15vh;
+}
+	
+.pageheading{
+	font-family : math;
+	font-size : 4rem;
+}
+	
+.searchform{
+	position : relative;
+}
+	
+.searchinput{
+	background-color : #28196633;
+	border : none;
+	border-bottom : 1px solid white;
+	outline : none;
+	color : white;
+	width: 70vw;
+	margin-top : 10vh;
+	height : 5vh;
+}
+	
+/* .searchbutton{
+	    background-color : #28196633;
+	    border : 1px solid white;
+	    width : 5vw;
+	    height : 5vh;
+	    color : white;
+} */
+	
+.searchresult{
+	color : white;
+	position : absolute;
+	top : 15vh;
+	left : 14vw;
+	width: 70vw;
+	max-height:35vh;
+	background-color : #202076;
+	padding : 4px;
+	overflow-y : scroll;
+	display : none;
+	justify-content : center;
+	flex-direction : column;
+}
+	
+.contentlistitem{
+	display : flex;
+	padding : 4px;
+	justify-content : space-between;
+	border-bottom : 1px solid white;
+}
+	
+.contentlistitem:hover{
+	background-color: #140d33;
+}
+	
+.contentposter{
+	width : 10vw;
+}
+	
+.contentposter img{
+	max-width : 100%;
+	max-height: 20vh ;
+	object-fit : contain;
+}
+	
+.contenttitle{
+	cursor: pointer;
+}
+	
+.contentdetail{
+	display : flex;
+	flex-direction : column;
+	justify-content : space-around; 
+}
+		
+.releaseyear, .type{
+	font-size: 0.7rem;
+}
+	
+.favbtn{
+	display : flex;
+	flex-direction : column;
+	justify-content : space-around;
+	cursor: pointer;
+}
+	
+::-webkit-scrollbar {
+	width: 10px;
+}
+	
+::-webkit-scrollbar-track {
+	background: lightblue;
+}
+	
+	
+::-webkit-scrollbar-thumb {
+	background: blue;
+}
+	
+	
+::-webkit-scrollbar-thumb:hover {
+	background: navy;
+}
+
+
+@media screen and (max-width : 768px) {
+	.navigators{
+		width:20vw;
+	}
+	.searchresult{
+		left: 13vw;
+	}
+}
+
+@media screen and (max-width : 600px) {
+	.navigators{
+		width:25vw;
+	}
+	.pageheading{
+		font-size : 3rem;
+	}
+}
