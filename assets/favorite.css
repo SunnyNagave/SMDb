@@ -1,0 +1,109 @@
+body{
+    background-image:linear-gradient(0deg,black,#281966);
+    color:white;
+}
+    
+header{
+    font-family : fantasy;
+    display : flex;
+    justify-content : space-between;
+    background-color: #281966;
+    height : 10vh;
+    align-items : center;
+    padding-left: 10px;
+    border: 4px groove white;
+    border-radius : 5vh;
+}
+    
+.cursorpointer{
+    cursor : pointer;
+}
+    
+.navigators{
+    display : flex;
+    justify-content : space-around;
+    width:15vw;
+}
+
+.anchorstyle{
+    text-decoration:none;
+    color:white;
+}
+
+.pageheading{
+    text-align:center;
+    text-decoration:underline;
+    font-family:math;
+    font-size:2rem;
+    margin-top:20px;
+}
+    
+.movielist{
+    border: 4px inset white;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:4px;
+    margin-top:20px;
+}
+    
+.moviecontainer{
+    padding:2px;
+    text-align:center;
+    width:10vw;
+    word-wrap:break;
+    margin: 5px 1vw;    
+}
+
+.movieposter{
+    width:10vw;
+    height:15vw;
+}
+    
+.movieposter img{
+    width:auto;
+    max-width:100%;
+    height:auto;
+    max-height:30vh;
+    margin:auto;
+}
+    
+.removefromlist{
+    font-size: 0.7rem;
+    border-top: 1px solid white;
+    margin-top:5px;    
+}
+    
+.moviename{
+    cursor:pointer;
+    height:3vw;
+    font-size:1vw;
+    font-weight:700;
+}
+
+.removefromlist{
+    font-size:0.8vw;
+}
+
+.removefromlist:hover{
+    background-color:#281966;
+    cursor:pointer;
+}
+
+@media screen and (max-width : 768px) {
+	.navigators{
+		width:20vw;
+	}
+	.searchresult{
+		left: 13vw;
+	}
+}
+
+@media screen and (max-width : 600px) {
+	.navigators{
+		width:25vw;
+	}
+	.pageheading{
+		font-size : 1.5rem;
+	}
+}

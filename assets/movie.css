@@ -1,0 +1,99 @@
+html{
+	height: 100%;
+}
+	
+body{
+	background-image:linear-gradient(0deg,black,#281966);
+	 color:white;
+}
+	
+header{
+	font-family : fantasy;
+	display : flex;
+	justify-content : space-between;
+	background-color: #281966;
+	height : 10vh;
+	align-items : center;
+	padding-left: 10px;
+	border: 4px groove white;
+	border-radius : 5vh;
+}
+	
+.navigators{
+	display : flex;
+	justify-content : space-around;
+	width:15vw;
+}
+
+.anchorstyle{
+	text-decoration:none;
+	color:white;
+}
+	
+main{
+	margin: auto;
+	margin-top : 10px;
+	border:4px inset white;
+	padding: 4px;
+	width: 80vw;
+	font-family:Garamond;
+}
+	
+.moviecontainer{
+	display:flex;
+	justify-content:space-between;
+	padding:4px
+}
+	
+.movieposter{
+	width: 30%;
+}
+	
+.movieposter img{
+	width:100%;
+	height:auto;
+}
+
+.moviedetails{
+	width : 65%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+	
+.movietitle{
+	font-size: 1.5rem;
+}
+
+#likebtn{
+	float: right;
+	margin-right: 4px;
+}
+
+
+/* media query for small devices */
+@media screen and (max-width : 768px) {
+	.navigators{
+		width:20vw;
+	}
+	.moviedetails{
+		font-size: 0.8rem;
+	}
+	.movietitle{
+		font-size : 1rem;
+	}
+}
+
+
+/* media query for extra small devices */
+@media screen and (max-width : 600px) {
+	.navigators{
+		width:25vw;
+	}
+	.moviedetails{
+		font-size: 0.6rem;
+	}
+	.movietitle{
+		font-size : 0.8rem;
+	}
+}
